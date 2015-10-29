@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Lab 4 Connecting to Azure Service Bus</Title>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[        
+using (SensorMgr lightSensor = new SensorMgr(light))
+using (SensorMgr tempSensor = new SensorMgr(temp))
+using (SensorMgr memory = new SensorMgr(mem))
+{
+
+lightSensor.OnAfterMeasurement += OnAfterMeasurement;
+lightSensor.OnBeforeMeasurement += OnBeforeMeasure;
+lightSensor.OnAfterMeasurement += SetLEDMatrixBrightness;
+
+tempSensor.OnAfterMeasurement += OnAfterMeasurement;
+tempSensor.OnBeforeMeasurement += OnBeforeMeasure;
+
+memory.OnAfterMeasurement += OnAfterMeasurement;
+memory.OnBeforeMeasurement += OnBeforeMeasure;
+
+DisplayTemperature().Wait();
+}            
+            ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+
+
+
+
+

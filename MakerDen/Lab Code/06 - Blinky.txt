@@ -1,0 +1,14 @@
+﻿while (true)
+{
+    ledGreen.On();
+    ledGreen.Off();
+    Display(Grid8x8.Symbols.HappyFace);
+
+    Util.Delay(1000);
+
+    ledGreen.Off();
+    ledGreen.On();
+    Display(Grid8x8.Symbols.SadFace);
+
+    Util.Delay(1000);
+}

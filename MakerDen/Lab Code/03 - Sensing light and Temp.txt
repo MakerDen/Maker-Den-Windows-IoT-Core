@@ -1,0 +1,20 @@
+﻿using (SensorMgr lightSensor = new SensorMgr(light, SensorMgr.Sampling.Manual) )
+using (SensorMgr temperatureSensor = new SensorMgr(temp, SensorMgr.Sampling.Manual))
+{
+
+    while (true)
+    {
+        var message = $"{Math.Round(temp.Temperature.DegreesCelsius, 1)}C";
+        Display(message);  // Display temp on matrix
+
+        if (light.ReadRatio * 100 > LIGHT_THRESHOLD)
+        {
+            ledGreen.On();
+        }
+        else
+        {
+            ledGreen.Off();
+        }
+        Util.Delay(500);
+    }
+}

@@ -1,0 +1,23 @@
+﻿using (SensorMgr lightSensorMgr = new SensorMgr(light))
+{
+
+    // keep looping until the plug is pulled - this is a very common IoT pattern
+    while (true)
+    {
+        // this is simply so we can break and see the value
+        var level = light.ReadRatio * 100;
+
+        // if the light level is above a certain level
+        if (level > LIGHT_THRESHOLD)
+        {
+            Display(Grid8x8.Symbols.HappyFace);  // Happy Face
+            ledGreen.On(); // turn on the green LED on the Explorer HAT
+        }
+        else
+        {
+            Display(Grid8x8.Symbols.SadFace);  // Sad face
+            ledGreen.Off(); // turn off the green LED on the Explorer HAT
+        }
+        Util.Delay(500);
+    }
+}

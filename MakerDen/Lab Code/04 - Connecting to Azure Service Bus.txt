@@ -1,0 +1,17 @@
+﻿using (SensorMgr lightSensor = new SensorMgr(light))
+using (SensorMgr tempSensor = new SensorMgr(temp))
+using (SensorMgr memory = new SensorMgr(mem))
+{
+
+    lightSensor.OnAfterMeasurement += OnAfterMeasurement;
+    lightSensor.OnBeforeMeasurement += OnBeforeMeasure;
+    lightSensor.OnAfterMeasurement += SetLEDMatrixBrightness;
+
+    tempSensor.OnAfterMeasurement += OnAfterMeasurement;
+    tempSensor.OnBeforeMeasurement += OnBeforeMeasure;
+
+    memory.OnAfterMeasurement += OnAfterMeasurement;
+    memory.OnBeforeMeasurement += OnBeforeMeasure;
+
+    DisplayTemperature().Wait();
+}
