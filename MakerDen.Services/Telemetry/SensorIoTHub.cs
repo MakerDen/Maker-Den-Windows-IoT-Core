@@ -54,7 +54,9 @@ namespace MakerDen.Telemetry
 
                 var devPropMsg = new Message(Encoding.UTF8.GetBytes(deviceInfo));
 
-                deviceClient.SendEventAsync(devPropMsg);
+
+                // added the var result to suppress the warning - dglover
+                var result = deviceClient.SendEventAsync(devPropMsg);
 
             }
             catch (Exception e)
