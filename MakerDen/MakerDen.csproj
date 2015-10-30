@@ -125,7 +125,7 @@
     <Content Include="Lab Code\05 - Barebones.txt" />
     <Content Include="Lab Code\06 - Blinky.txt" />
     <None Include="Lab Code\Lab 1 Welsome.snippet" />
-    <None Include="Lab Code\Lab 2 - Sensing the World.snippet" />
+    <None Include="Lab Code\Lab 2 Sensing the World.snippet" />
     <Content Include="Lab Code\Readme.txt" />
     <Content Include="Properties\MakerDen.rd.xml" />
   </ItemGroup>
