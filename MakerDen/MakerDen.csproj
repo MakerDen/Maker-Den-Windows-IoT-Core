@@ -110,9 +110,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <None Include="Lab Code\Lab 3 Sensing Light and Temperature.snippet" />
-    <None Include="Lab Code\Weather.snippet" />
-    <None Include="Lab Code\Lab 4 Connecting to Cloud Services.snippet" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -124,8 +121,6 @@
     <Content Include="Lab Code\04 - Connecting to Azure Service Bus.txt" />
     <Content Include="Lab Code\05 - Barebones.txt" />
     <Content Include="Lab Code\06 - Blinky.txt" />
-    <None Include="Lab Code\Lab 1 Welsome.snippet" />
-    <None Include="Lab Code\Lab 2 Sensing the World.snippet" />
     <Content Include="Lab Code\Readme.txt" />
     <Content Include="Properties\MakerDen.rd.xml" />
   </ItemGroup>

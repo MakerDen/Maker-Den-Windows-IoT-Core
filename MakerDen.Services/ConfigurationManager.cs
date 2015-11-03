@@ -16,7 +16,7 @@ namespace MakerDen
 
         #region MQTT Config
 
-        public static CloudMode CloudConnection { get; set; } = CloudMode.MQTT;
+        public static CloudMode CloudConnection { get; set; } = CloudMode.None;
         public static string Organisation { get; set; } = "Microsoft";
         public static string Location { get; set; } = "Melbourne";
         public static string NetworkId { get; set; }

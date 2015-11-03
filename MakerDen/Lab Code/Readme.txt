@@ -1,1 +1,1 @@
-﻿User Guide can be found at https://github.com/MakerDen/IoT-Maker-Den-Documentation-and-Guides
+﻿User Guide can be found at https://github.com/MakerDen/IoT-Maker-Den-Documentation-and-Resources
