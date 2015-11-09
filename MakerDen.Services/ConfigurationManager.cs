@@ -18,7 +18,7 @@ namespace MakerDen
 
         public static CloudMode CloudConnection { get; set; } = CloudMode.None;
         public static string Organisation { get; set; } = "Microsoft";
-        public static string Location { get; set; } = "Melbourne";
+        public static string Location { get; set; } = "Sydney";
         public static string NetworkId { get; set; }
         public static string DeviceId { get; set; }
 

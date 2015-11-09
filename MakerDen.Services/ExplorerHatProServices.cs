@@ -142,14 +142,14 @@ namespace MakerDen
         protected uint OnAfterMeasurement(object sender, EventArgs e)
         {
             var sensorTelemetry = ((SensorMgr.SensorItemEventArgs)e).SensorTelemetry;
-            var json = sensorTelemetry.ToJson();
-
 
             if (sm == null)
             {
                 Debug.WriteLine(sensorTelemetry.ToString());
                 return 0;
             }
+
+            var json = sensorTelemetry.ToJson();
 
             var topic = sensorTelemetry.Channel;
 

@@ -111,6 +111,7 @@
     <Compile Include="IComponent.cs" />
     <Compile Include="Actuator\Led.cs" />
     <Compile Include="NtpClient.cs" />
+    <Compile Include="Sensor\BMP180Sensor.cs" />
     <Compile Include="Sensor\InfraRedDistance.cs" />
     <Compile Include="Sensor\ISensor.cs" />
     <Compile Include="Sensor\UltraSoundDistance.cs" />

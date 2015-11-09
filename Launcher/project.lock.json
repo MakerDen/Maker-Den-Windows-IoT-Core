@@ -3,7 +3,7 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
-      "Glovebox.Graphics/1.0.6": {
+      "Glovebox.Graphics/1.0.8": {
         "compile": {
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         },
@@ -11,7 +11,7 @@
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         }
       },
-      "Glovebox.IoT.Devices/1.0.0": {
+      "Glovebox.IoT.Devices/1.0.5": {
         "compile": {
           "lib/uap10.0/Glovebox.IoT.Devices.dll": {}
         },
@@ -27,7 +27,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -1578,7 +1578,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "Glovebox.Graphics/1.0.6": {
+      "Glovebox.Graphics/1.0.8": {
         "compile": {
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         },
@@ -1586,7 +1586,7 @@
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         }
       },
-      "Glovebox.IoT.Devices/1.0.0": {
+      "Glovebox.IoT.Devices/1.0.5": {
         "compile": {
           "lib/uap10.0/Glovebox.IoT.Devices.dll": {}
         },
@@ -1602,7 +1602,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -3243,7 +3243,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "Glovebox.Graphics/1.0.6": {
+      "Glovebox.Graphics/1.0.8": {
         "compile": {
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         },
@@ -3251,7 +3251,7 @@
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         }
       },
-      "Glovebox.IoT.Devices/1.0.0": {
+      "Glovebox.IoT.Devices/1.0.5": {
         "compile": {
           "lib/uap10.0/Glovebox.IoT.Devices.dll": {}
         },
@@ -3267,7 +3267,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -4880,7 +4880,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "Glovebox.Graphics/1.0.6": {
+      "Glovebox.Graphics/1.0.8": {
         "compile": {
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         },
@@ -4888,7 +4888,7 @@
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         }
       },
-      "Glovebox.IoT.Devices/1.0.0": {
+      "Glovebox.IoT.Devices/1.0.5": {
         "compile": {
           "lib/uap10.0/Glovebox.IoT.Devices.dll": {}
         },
@@ -4904,7 +4904,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -6550,7 +6550,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "Glovebox.Graphics/1.0.6": {
+      "Glovebox.Graphics/1.0.8": {
         "compile": {
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         },
@@ -6558,7 +6558,7 @@
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         }
       },
-      "Glovebox.IoT.Devices/1.0.0": {
+      "Glovebox.IoT.Devices/1.0.5": {
         "compile": {
           "lib/uap10.0/Glovebox.IoT.Devices.dll": {}
         },
@@ -6574,7 +6574,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -8187,7 +8187,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "Glovebox.Graphics/1.0.6": {
+      "Glovebox.Graphics/1.0.8": {
         "compile": {
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         },
@@ -8195,7 +8195,7 @@
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         }
       },
-      "Glovebox.IoT.Devices/1.0.0": {
+      "Glovebox.IoT.Devices/1.0.5": {
         "compile": {
           "lib/uap10.0/Glovebox.IoT.Devices.dll": {}
         },
@@ -8211,7 +8211,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -9857,7 +9857,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "Glovebox.Graphics/1.0.6": {
+      "Glovebox.Graphics/1.0.8": {
         "compile": {
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         },
@@ -9865,7 +9865,7 @@
           "lib/uap10.0/Glovebox.Graphics.dll": {}
         }
       },
-      "Glovebox.IoT.Devices/1.0.0": {
+      "Glovebox.IoT.Devices/1.0.5": {
         "compile": {
           "lib/uap10.0/Glovebox.IoT.Devices.dll": {}
         },
@@ -9881,7 +9881,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -11495,8 +11495,8 @@
     }
   },
   "libraries": {
-    "Glovebox.Graphics/1.0.6": {
-      "sha512": "C/y+JjbkRYgHOj8S/EyV76gRHqlm3cxLRiZ40xeyEDJPik5q9FsxbFwZuuFMYh/U8QPSVr2z8uZDzPpY7ayPcg==",
+    "Glovebox.Graphics/1.0.8": {
+      "sha512": "9y7ryP1aJDkHlRtIfcQg7c5wXk5wjN1p9xGql5V+Cx67RwDN2ltapsbvIxh3xv0l5bn8TJg2WiIEC8nocdp8cA==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -11504,11 +11504,11 @@
         "CreateNugetPackage.bat",
         "Glovebox.Graphics.nuspec",
         "lib/uap10.0/Glovebox.Graphics.dll",
-        "package/services/metadata/core-properties/67569830bf6d46ef900408cf5f31fbc4.psmdcp"
+        "package/services/metadata/core-properties/8665105d22cb4a1e9fa048f4c6775650.psmdcp"
       ]
     },
-    "Glovebox.IoT.Devices/1.0.0": {
-      "sha512": "agG3gTuIL3y6BEUTZ+rb8prgMjWm05tMfY1ONoHITr7UumQYzWm0jn/DYhodhgeU/FNWq7lkNyBbcFkdKB4z3w==",
+    "Glovebox.IoT.Devices/1.0.5": {
+      "sha512": "gB8yPqt83VdPFOjuoAkS/30wy3iIScIG4zaNFOTNEbXxkPPDemurTsIJtJZvQgeZhx60Lk/dBiX31f/dPNUrUA==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -11516,7 +11516,7 @@
         "CreateNugetPackage.bat",
         "Glovebox.IoT.Devices.nuspec",
         "lib/uap10.0/Glovebox.IoT.Devices.dll",
-        "package/services/metadata/core-properties/c43b831c49c240e197dfd1d1f90078a6.psmdcp"
+        "package/services/metadata/core-properties/aea2dc4e844847d789fdf8f33bae7142.psmdcp"
       ]
     },
     "M2Mqtt/4.2.0.1": {
@@ -11556,8 +11556,8 @@
         "package/services/metadata/core-properties/2f7faa29229044c885aacbc9fc6f48b6.psmdcp"
       ]
     },
-    "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
-      "sha512": "TUhFbCjVYF6R7QmVC8iVvt2dklCVhcZagb9BG3Pc2O/uNR7KBHWgk7qxAm4i2xCU2yN985EScImh5d6tB9SE1Q==",
+    "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
+      "sha512": "Hxs6ZC8aUH/IJF792S30BYzrVXtRlyfgjbIMHYX4hXOrwz6u5O0DrE5sFIPeAt8HyJlTkokDyH3qZx3kbiVG2Q==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -11565,7 +11565,7 @@
         "lib/net45/Microsoft.Azure.Devices.Client.dll",
         "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd",
         "Microsoft.Azure.Devices.Client.nuspec",
-        "package/services/metadata/core-properties/3da29926584a4ac4927abc2e1df5a05b.psmdcp",
+        "package/services/metadata/core-properties/5fb1662ca0d14945b3a7fbb0ad18ad26.psmdcp",
         "thirdpartynotice.txt"
       ]
     },
@@ -14934,7 +14934,9 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Glovebox.IoT.Devices >= 1.0.0",
+      "Glovebox.Graphics >= 1.0.8",
+      "Glovebox.IoT.Devices >= 1.0.5",
+      "Microsoft.Azure.Devices.Client >= 1.0.0-preview-006",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0"
     ],
     "UAP,Version=v10.0": []

@@ -17,13 +17,17 @@ namespace MakerDen
     {
         private IServiceManager sm;
 
-        public void Initialise(string name, CloudMode cloudMode = CloudMode.None)
+        public void Initialise(string name, CloudMode cloudMode = CloudMode.None, bool initHat = false)
         {
-            Adc = new MCP3002();
-            matrix = new LED8x8Matrix(new Ht16K33());
-            bmp280TempPressure = new BMP280Sensor() { SampleRateMilliseconds = 30000 };
 
-            InitialiseHat();
+            if (initHat)
+            {
+                Adc = new MCP3002();
+                matrix = new LED8x8Matrix(new Ht16K33());
+                bmp280TempPressure = new BMP280Sensor() { SampleRateMilliseconds = 30000 };
+
+                InitialiseHat();
+            }
 
             Util.SetName(name);
             SensorMgr.DeviceName = Util.GetHostName();
@@ -102,14 +106,14 @@ namespace MakerDen
         protected uint OnAfterMeasurement(object sender, EventArgs e)
         {
             var sensorTelemetry = ((SensorMgr.SensorItemEventArgs)e).SensorTelemetry;
-            var json = sensorTelemetry.ToJson();
-
 
             if (sm == null)
             {
                 Debug.WriteLine(sensorTelemetry.ToString());
                 return 0;
             }
+
+            var json = sensorTelemetry.ToJson();
 
             var topic = sensorTelemetry.Channel;
 

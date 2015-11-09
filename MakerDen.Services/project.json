@@ -1,7 +1,7 @@
 ﻿{
   "dependencies": {
-    "Glovebox.Graphics": "1.0.6",
-    "Glovebox.IoT.Devices": "1.0.0",
+    "Glovebox.Graphics": "1.0.8",
+    "Glovebox.IoT.Devices": "1.0.5",
     "M2Mqtt": "4.2.0.1",
     "Microsoft.Azure.Devices.Client": "1.0.0-preview-005",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",

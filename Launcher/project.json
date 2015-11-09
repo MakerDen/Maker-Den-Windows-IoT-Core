@@ -1,6 +1,8 @@
 ﻿{
   "dependencies": {
-    "Glovebox.IoT.Devices": "1.0.0",
+    "Glovebox.Graphics": "1.0.8",
+    "Glovebox.IoT.Devices": "1.0.5",
+    "Microsoft.Azure.Devices.Client": "1.0.0-preview-006",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
   },
   "frameworks": {
