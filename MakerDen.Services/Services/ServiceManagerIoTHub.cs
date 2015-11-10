@@ -100,21 +100,20 @@ namespace MakerDen.Services
                 this.DeviceID = this.GetValue("DeviceId");
                 string sharedAccessKey = this.GetValue("SharedAccessKey");
 
-                // ?api-version=2015-08-15-preview
+                // MANDATORY to have ?api-version=2015-08-15-preview as the query string otherwise the IoT Hub HTTPS D2C endpoint would throw a HTTP error with StatusCode: 400, ReasonPhrase: 'Bad Request'
                 string requestUri = String.Format("/devices/{0}/messages/events?api-version=2015-08-15-preview", DeviceID);
                 string sr = String.Format("{0}/devices/{1}", hostName, DeviceID);
 
                 // Note: The SAS Token is set to expire after 5 minutes so as to limit the telemetry being sent to the IoT Hub
-                this.sas = BuildSignature(null, sharedAccessKey, sr, TimeSpan.FromMinutes(20));
+                this.sas = BuildSignature(null, sharedAccessKey, sr, TimeSpan.FromMinutes(5));
                 this.uri = new Uri(String.Format("https://{0}{1}", hostName, requestUri));
 
                 httpClient = new HttpClient();
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("SharedAccessSignature", sas);
                 return true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                var error = e.Message;
                 return false;
             }
         }
@@ -131,7 +130,7 @@ namespace MakerDen.Services
             }
             catch (Exception e)
             {
-                Debug.WriteLine("Exception when sending Device Info:" + e.Message);
+                Debug.WriteLine("Exception when sending Device Info to IoT Hub:" + e.Message);
             }
         }
 
