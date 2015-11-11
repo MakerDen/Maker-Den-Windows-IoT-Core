@@ -13,17 +13,21 @@ namespace MakerDen
 
         public void Main()
         {
-            Initialise("Replace with Your Name", CloudMode.None);
+            Initialise("Faister", CloudMode.IoT_Hub);
 
 
             #region paste the code snippet in between the #region and #endregion tags
 
-
-            while (true)
+            using (SensorMgr tempSensor = new SensorMgr(temp))
             {
-                Welcome();
-            }
 
+
+                tempSensor.OnAfterMeasurement += OnAfterMeasurement;
+                tempSensor.OnBeforeMeasurement += OnBeforeMeasure;
+
+
+                DisplayTemperature().Wait();
+            }
 
             #endregion
         }
