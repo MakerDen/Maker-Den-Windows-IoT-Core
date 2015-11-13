@@ -1,18 +1,24 @@
 ﻿using Glovebox.Graphics.Components;
 using Glovebox.Graphics.Drivers;
 using Glovebox.Graphics.Grid;
+using Glovebox.IoT.Devices.Converters;
 using Glovebox.IoT.Devices.HATs;
 using MakerDen.Sensor;
 using MakerDen.Services;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Windows.Devices.Adc;
 using static MakerDen.ConfigurationManager;
 
 namespace MakerDen
 {
     public class ExplorerHatProServices : ExplorerHatPro
     {
+
+        AdcProviderManager adcManager = new AdcProviderManager();
+        public AdcController ADS1015 { get; private set; }
+
 
         private IServiceManager sm;
 
@@ -24,19 +30,23 @@ namespace MakerDen
         protected LED8x8Matrix matrix;
 
 
-        protected void Initialise(string yourName = "", CloudMode cloudMode = CloudMode.None)
+        protected async void Initialise(string yourName = "Maker", CloudMode cloudMode = CloudMode.None)
         {
             Util.SetName(yourName);
             SensorMgr.DeviceName = Util.GetHostName();
 
             StartNetworkServices(cloudMode);
 
-            InitialiseHatAsync(true, true, false).Wait();
+            InitialiseHatAsync(false, true, false).Wait();
+
+            // for now not using the adc on the explorer hat as it's set to 3.3volts
+            adcManager.Providers.Add(new ADS1015(Glovebox.IoT.Devices.Converters.ADS1015.Gain.Volt5));
+            ADS1015 = (await adcManager.GetControllersAsync())[0];
 
             ShortLedShow();
 
-            light = new LightSensor(adcControllers[0].OpenChannel((int)Pin.Analog.A3));
-            temp = new TempSensor(adcControllers[0].OpenChannel((int)Pin.Analog.A4));
+            light = new LightSensor(ADS1015.OpenChannel((int)Pin.Analog.A3));
+            temp = new TempSensor(ADS1015.OpenChannel((int)Pin.Analog.A4), 5000); //version one of wiring on Explorer Pro for ADC = 5v - this will change to 3.3v in the future 
             mem = new MemSensor();
 
             matrix = new LED8x8Matrix(new Ht16K33());

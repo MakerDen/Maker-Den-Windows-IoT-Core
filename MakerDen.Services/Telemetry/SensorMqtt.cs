@@ -1,5 +1,6 @@
 ﻿using MakerDen.Json;
 using MakerDen.Sensor;
+using System;
 
 namespace MakerDen.Telemetry
 {
@@ -14,16 +15,22 @@ namespace MakerDen.Telemetry
 
         static int MsgId { get; set; }
 
-        string DeviceName { get; set; }
+        string DeviceName { get; }
 
 
-        public SensorMqtt(ISensor sensor, string deviceName)
+        public SensorMqtt(ISensor sensor)
         {
             this.Sensor = sensor;
             this.component = sensor as IComponent;
-            this.DeviceName = deviceName;
 
-            Channel = ConfigurationManager.MqttNameSpace + deviceName + "/" + component.Type;
+            DeviceName = ConfigurationManager.NetworkId.Replace(" ", String.Empty);
+
+            DeviceName = string.IsNullOrWhiteSpace(DeviceName) ? "Maker" : DeviceName;
+
+            int len = DeviceName.Length > 5 ? len = 5 : DeviceName.Length;
+            DeviceName = DeviceName.Substring(0, len);
+
+            Channel = ConfigurationManager.MqttNameSpace + DeviceName + "/" + component.Type;
         }
 
 
