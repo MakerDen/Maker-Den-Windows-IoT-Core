@@ -41,11 +41,11 @@ namespace MakerDen.Services
         public ServiceManagerIoTHub(string deviceID)
         {
             // Only Device ID is not hard-coded, the rest of the Device Properties are hard-coded below, and the DeviceInfo message is sent to the IoT Hub to update 
-            var loc = ConfigurationManager.DeviceLocations.Find(x => x.DeviceID.Contains(deviceID));
+            var loc = ConfigurationManager.DeviceLocations.Find(x => x.UniqueRPiDeviceID.Contains(deviceID.ToUpperInvariant()));
             if (loc == null)
             {
                 // just defaults to 1 Epping Road
-                loc = new ConfigurationManager.DeviceLocation("rpi01", "HostName=FaisterRemote.azure-devices.net;DeviceId=rpi01;SharedAccessKey=JvGy9y1z6GlZFywrdAbFGw==", -33.796875, 151.138428);  // Microsoft Sydney, 1 Epping Road, North Ryde, NSW 2113, Australia
+                loc = new ConfigurationManager.DeviceLocation("F4D9C1B3-F68C-47B6-8894-855E3D78CF4C", "rpi01", "HostName=FaisterRemote.azure-devices.net;DeviceId=rpi01;SharedAccessKey=JvGy9y1z6GlZFywrdAbFGw==", -33.796875, 151.138428);  // Microsoft Sydney, 1 Epping Road, North Ryde, NSW 2113, Australia
             }
             this.IoTConnectionString = loc.IoTHubConnectionString;
             this.Latitude = loc.Latitude;
@@ -69,6 +69,9 @@ namespace MakerDen.Services
 
         private async Task sendMessage(string message)
         {
+            if (String.IsNullOrEmpty(message))
+                return;
+
             using (var msg = new HttpRequestMessage(HttpMethod.Post, this.uri))
             {
                 if (this.uri == null) return;

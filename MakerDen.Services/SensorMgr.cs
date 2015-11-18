@@ -74,7 +74,7 @@ namespace MakerDen
                     SensorData = new SensorConnectTheDots(sensor);
                     break;
                 case ConfigurationManager.CloudMode.IoT_Hub:
-                    SensorData = new SensorIoTHub(sensor, DeviceName);
+                    SensorData = new SensorIoTHub(sensor, Util.UniqueDeviceId);
                     break;
                 default:
                     SensorData = new SensorMqtt(sensor);
