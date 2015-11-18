@@ -27,7 +27,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -1602,7 +1602,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -3267,7 +3267,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -4904,7 +4904,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -6574,7 +6574,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -8211,7 +8211,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -9881,7 +9881,7 @@
           "lib/win81/M2Mqtt.WinRT.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
+      "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         },
@@ -11556,8 +11556,8 @@
         "package/services/metadata/core-properties/2f7faa29229044c885aacbc9fc6f48b6.psmdcp"
       ]
     },
-    "Microsoft.Azure.Devices.Client/1.0.0-preview-006": {
-      "sha512": "Hxs6ZC8aUH/IJF792S30BYzrVXtRlyfgjbIMHYX4hXOrwz6u5O0DrE5sFIPeAt8HyJlTkokDyH3qZx3kbiVG2Q==",
+    "Microsoft.Azure.Devices.Client/1.0.0-preview-005": {
+      "sha512": "TUhFbCjVYF6R7QmVC8iVvt2dklCVhcZagb9BG3Pc2O/uNR7KBHWgk7qxAm4i2xCU2yN985EScImh5d6tB9SE1Q==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -11565,7 +11565,7 @@
         "lib/net45/Microsoft.Azure.Devices.Client.dll",
         "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd",
         "Microsoft.Azure.Devices.Client.nuspec",
-        "package/services/metadata/core-properties/5fb1662ca0d14945b3a7fbb0ad18ad26.psmdcp",
+        "package/services/metadata/core-properties/3da29926584a4ac4927abc2e1df5a05b.psmdcp",
         "thirdpartynotice.txt"
       ]
     },
@@ -14936,7 +14936,6 @@
     "": [
       "Glovebox.Graphics >= 1.0.8",
       "Glovebox.IoT.Devices >= 1.0.5",
-      "Microsoft.Azure.Devices.Client >= 1.0.0-preview-006",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0"
     ],
     "UAP,Version=v10.0": []

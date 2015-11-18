@@ -42,25 +42,21 @@ namespace MakerDen.Services
         {
             uint retryCount = 0;
             string mqttError = string.Empty;
-            const uint MaxRetryCount = 1;
+        //    const uint MaxRetryCount = 1;
 
             await Task.Yield();
 
             if (!connected) { return; }
 
-            while (mqtt == null && retryCount < MaxRetryCount)
+            while (mqtt == null) // && retryCount < MaxRetryCount)
             {
                 try { StartMqtt(); }
                 catch (Exception ex)
                 {
                     retryCount++;
                     mqttError = ex.Message;
-                    await Task.Delay(2000);
+                    if (retryCount < 10) { await Task.Delay(2000); } else { await Task.Delay(10000); }
                 }
-            }
-            if (mqtt == null)
-            {
-                throw new Exception("Problem connecting to MQTT Service.  Check Network Connection. " + mqttError);
             }
         }
 

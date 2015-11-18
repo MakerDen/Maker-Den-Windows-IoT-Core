@@ -68,7 +68,7 @@ namespace MakerDen
             switch (ConfigurationManager.CloudConnection)
             {
                 case ConfigurationManager.CloudMode.MQTT:
-                    SensorData = new SensorMqtt(sensor, DeviceName);
+                    SensorData = new SensorMqtt(sensor);
                     break;
                 case ConfigurationManager.CloudMode.EventHub:
                     SensorData = new SensorConnectTheDots(sensor);
@@ -77,7 +77,7 @@ namespace MakerDen
                     SensorData = new SensorIoTHub(sensor, DeviceName);
                     break;
                 default:
-                    SensorData = new SensorMqtt(sensor, DeviceName);
+                    SensorData = new SensorMqtt(sensor);
                     break;
             }
 

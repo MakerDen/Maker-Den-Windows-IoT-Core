@@ -1,4 +1,4 @@
-# Internet of Things Maker Den on Windows 10 for IoT on Raspberry Pi 2
+# Internet of Things Maker Den on Windows 10 IoT Core on Raspberry Pi 2
 
 #Full Documentation and Resources
 
@@ -12,7 +12,7 @@
 #What is The Internet of Things Maker Den?
 
 The Internet of Things Maker Den is designed to be an accessible hands on experience with hardware prototyping and building a Universal Windows App that you will deploy to a 
-Raspberry Pi 2 running Windows 10 for IoT..  
+Raspberry Pi 2 running Windows 10 IoT Core.  
 
 The goal of the lab is to learn something about wiring circuits (with plenty of guidance), deploying code and streaming your sensor data to Microsoft Azure.  
 
@@ -20,7 +20,7 @@ The Maker Den is implemented on top of the Internet of Things Solutions Framewor
 
 #What is the Internet of Things Solution Framework?
 
-The Internet of Things Solution Framework for Windows 10 on IoT is a general purpose extensible pluggable foundation to support sensors, actuators, data serialisation, communications,
+The Internet of Things Solution Framework for Windows 10 IoT Core is a general purpose extensible pluggable foundation to support sensors, actuators, data serialisation, communications,
 and command and control.
 
 #Cloud Modes

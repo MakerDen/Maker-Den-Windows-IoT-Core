@@ -8,7 +8,7 @@ namespace MakerDen.Sensor
     public class TempSensor : MCP9700A, ISensor, IComponent
     {
 
-        public TempSensor(AdcChannel channel) : base(channel)
+        public TempSensor(AdcChannel channel, int referenceMillivolts=3300) : base(channel, referenceMillivolts)
         {
             Value = new double[(int)ValuesPerSample];
         }
