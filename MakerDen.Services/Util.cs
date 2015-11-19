@@ -108,7 +108,7 @@ namespace MakerDen
                 case ConfigurationManager.CloudMode.EventHub:
                     return new ServiceManagerEventBus();
                 case ConfigurationManager.CloudMode.IoT_Hub:
-                    return new ServiceManagerIoTHub(ConfigurationManager.DeviceId);
+                    return new ServiceManagerIoTHub(Util.UniqueDeviceId);
                 default:
                     break;
             }
