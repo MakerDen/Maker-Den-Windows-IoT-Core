@@ -8,7 +8,7 @@
     {
         int SampleRateMilliseconds { get; set; }
 
-        string UnitofMeasure { get; }
+        string[] UnitofMeasure { get; }
 
         ValuesPerSample ValuesPerSample { get; }
 

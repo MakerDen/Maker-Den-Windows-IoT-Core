@@ -18,7 +18,7 @@ namespace MakerDen.Sensor
 
         public ValuesPerSample ValuesPerSample => ValuesPerSample.One;
 
-        public string UnitofMeasure => "cm";
+        public string[] UnitofMeasure => new string[] { "cm" };
 
         public int SampleRateMilliseconds { get; set; } = 50;
 
