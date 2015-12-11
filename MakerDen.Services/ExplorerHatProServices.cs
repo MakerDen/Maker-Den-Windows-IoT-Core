@@ -84,6 +84,26 @@ namespace MakerDen
             }
         }
 
+        public async Task DisplayTemperature(ISensor sensor)
+        {
+            if (matrix == null) { return; }
+
+            matrix.DrawSymbol(Grid8x8.Symbols.HourGlass);
+            matrix.FrameDraw();
+            await Task.Delay(1500); // give network services time to initialise
+
+            while (true)
+            {
+                if (temp != null)
+                {
+                    sensor.Measure();
+                    var message = $"{Math.Round(sensor.Value[0], 1)}C";
+                    Display(message);  // Display temp on matrix
+                }
+                await Task.Delay(1000);
+            }
+        }
+
 
         private async void ShortLedShow()
         {

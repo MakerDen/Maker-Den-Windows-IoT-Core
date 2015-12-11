@@ -1,0 +1,8 @@
+﻿var bmp180 = new BMP180Sensor();
+var light = new LightSensor(ADS1015.OpenChannel((int)Pin.Analog.A2));
+
+ISensor[] sensors = new ISensor[] { bmp180, light };
+
+IoTHub hub = new IoTHub(sensors);
+
+DisplayTemperature(bmp180).Wait();

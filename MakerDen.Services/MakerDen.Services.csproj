@@ -110,6 +110,7 @@
     <Compile Include="HATs\ProtoShield.cs" />
     <Compile Include="IComponent.cs" />
     <Compile Include="Actuator\Led.cs" />
+    <Compile Include="IoTHub.cs" />
     <Compile Include="NtpClient.cs" />
     <Compile Include="Sensor\BMP180Sensor.cs" />
     <Compile Include="Sensor\InfraRedDistance.cs" />
